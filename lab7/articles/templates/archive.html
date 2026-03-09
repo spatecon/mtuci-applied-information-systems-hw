@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>Архив всех статей</title>
-        <link rel="stylesheet" href="{{ STATIC_URL }}css/article.css">
+        <link rel="stylesheet" href="{% static 'css/article.css' %}">
     </head>
     <body class="archive">
         <div class="header">
-            <img src="{{ STATIC_URL }}img/dpb-logo.png" />
+            <img src="{% static 'img/dpb-logo.png' %}" />
             <a class="all-posts-link" href="/register/">Регистрация</a>
         </div>
         <div class="archive">
@@ -24,7 +25,7 @@
             </div>
             {% endfor %}
         </div>
-        <script src="{{ STATIC_URL }}js/helloworld.js"></script>
-        <script src="{{ STATIC_URL }}js/fold-post.js"></script>
+        <script src="{% static 'js/helloworld.js' %}"></script>
+        <script src="{% static 'js/fold-post.js' %}"></script>
     </body>
 </html>
